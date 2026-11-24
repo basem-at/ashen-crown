@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASHEN CROWN</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #07070d;
+        overflow: hidden;
+      }
+      #wrap {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(ellipse at center, #101020 0%, #07070d 70%);
+      }
+      canvas {
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        background: #000;
+        outline: none;
+        box-shadow: 0 0 60px rgba(224, 179, 76, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap"><canvas id="game" width="320" height="180"></canvas></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
